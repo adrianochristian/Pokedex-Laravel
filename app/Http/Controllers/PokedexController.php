@@ -17,14 +17,12 @@ class PokedexController extends Controller
             $p->data    = $this->getDataByUrl($p->url);
             $p->color   = $this->setColorByType($p->data['type']);
         }
-        //dd($pokemons[0]->data['image']);
         return view('dex')->with(compact('pokemons'));
     }
 
     public function pokemon($name){
         $pokemon = $this->getPokemon($name);
         $pokemon->pic = object_get($pokemon->sprites->other, 'official-artwork');
-        //dd($pokemon);
         return view('pokemon')->with(compact('pokemon'));
     }
 

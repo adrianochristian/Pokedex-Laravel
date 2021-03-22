@@ -20,13 +20,13 @@
             </div>
             <div class="menu-container">
                 <div class="expand_button menu-item"> 
-                    <a href="" class="btn e-button btn-sm">
+                    <a href="{{route('index')}}" class="btn e-button btn-sm">
                         <span class="e-button-text nav-lbl">
                             <i class="la la-home icon " style="padding-right:3px;"></i> 
                             Home
                         </span> 
                     </a>
-                    <a href="" class="btn e-button btn-sm">
+                    <a href="https://github.com/adrianochristian" class="btn e-button btn-sm">
                         <span class="e-button-text nav-lbl">
                             <i class="la la-question icon " style="padding-right:3px;"></i> 
                             About
