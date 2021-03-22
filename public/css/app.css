@@ -95,8 +95,30 @@ a{
     background-color: #DEFDE0;
 }
 
-.pokemon-img{
-    
+.row{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.linhas{
+
+}
+
+.name{
+    padding-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pic{
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+.pic img{
+    width:100%;
 }
 
 .pokemon-lbl{
@@ -136,7 +158,7 @@ a{
 /* CSS do footer */
 .footer-wrapper{
     background-color: #D14444;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 80px; 
