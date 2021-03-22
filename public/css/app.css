@@ -1,0 +1,143 @@
+body {
+    background-color: #AA3030;
+    position: relative;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CSS do Nav/Header */
+
+.navigation-menu{
+    position: sticky;
+    background-color: #D14444;
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1220px;
+    display: flex;
+    top: 0;
+    height: 80px;
+    align-items: center;
+}
+
+.title-container{
+    flex: 1;
+}
+
+.menu-img{
+    width: 80px;
+    padding: 10px;
+}
+
+.menu-container{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 0px 10px;
+}
+
+.menu-item{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-lbl{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.icon{
+    font-size: 30px;
+    color: #fff;
+}
+
+/* CSS do container de conteúdo */
+
+.content-wrapper{
+    background-color: #e5e5e3;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 25px;
+    max-width: 1220px;
+    align-items: center;
+    display: flex;
+    border: 2px solid #D14444;
+    border-radius: 10px;
+}
+
+.pokemon-list{
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    background-color: #e5e5e3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img-wrapper{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+    background-color: #DEFDE0;
+}
+
+.pokemon-img{
+    
+}
+
+.pokemon-lbl{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #A6A3A4;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Extensão dos botões no Menu */
+
+.e-button {
+    color: #fff;
+    overflow: hidden;
+    max-width: 50px;
+    -webkit-transition: max-width 0.3s ease-in-out;
+    -moz-transition: max-width 0.3s ease-in-out;
+    -o-transition: max-width 0.3s ease-in-out;
+    transition: max-width 0.3s linear
+}
+
+.e-button-text {
+    white-space: nowrap;
+    color: #fff
+}
+
+.e-button:hover {
+    color: #fff;
+    max-width: 280px
+}
+
+/* CSS do footer */
+.footer-wrapper{
+    background-color: #D14444;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 80px; 
+}
