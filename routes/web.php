@@ -16,5 +16,4 @@ use App\Http\Controllers\PokedexController;
 
 // Using PHP callable syntax...
 Route::get('/', [PokedexController::class, 'index']);
-Route::get('/pokemon/all', [PokedexController::class, 'getAll']);
-Route::get('/pokemon/{pokemon}', [PokedexController::class, 'getPokemon']);
+Route::get('/{pokemon}', [PokedexController::class, 'pokemon'])->name('get.pokemon');

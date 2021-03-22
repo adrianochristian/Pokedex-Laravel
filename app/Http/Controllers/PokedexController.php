@@ -21,11 +21,19 @@ class PokedexController extends Controller
         return view('dex')->with(compact('pokemons'));
     }
 
-    public function getPokemon(Request $request)
+    public function pokemon($name){
+        $pokemon = $this->getPokemon($name);
+        $pokemon->pic = object_get($pokemon->sprites->other, 'official-artwork');
+        //dd($pokemon);
+        return view('pokemon')->with(compact('pokemon'));
+    }
+
+    public function getPokemon($name)
     {
         //Pokemon by Name
-        $call = $this->getData("https://pokeapi.co/api/v2/pokemon/" . $request->name);
-        return $call->results;
+        $call = $this->getData("https://pokeapi.co/api/v2/pokemon/" . $name);
+
+        return $call;
     }
 
     public function getAll()
