@@ -24,7 +24,7 @@ class PokedexController extends Controller
         $pokemon = $this->getPokemon($name);
         $pokemon->pic = object_get($pokemon->sprites->other, 'official-artwork');
         foreach($pokemon->types as $types){
-            $pokemon->type_color = $this->setColorByType([$types->type->name]);
+            $pokemon->type_color[] = $this->setColorByType([$types->type->name]);
         }
         //dd($pokemon);
         return view('pokemon')->with(compact('pokemon'));
