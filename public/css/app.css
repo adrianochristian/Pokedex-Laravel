@@ -100,13 +100,15 @@ a{
     margin-right: 15px;
 }
 
-.linhas{
-
+.cards{
+    border-radius: 10px;
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
 }
 
-.name{
-    padding-top: 20px;
-    text-align: center;
+.cards span{
     text-transform: capitalize;
 }
 

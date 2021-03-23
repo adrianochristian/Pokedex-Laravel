@@ -2,15 +2,22 @@
 @section('content')
     <div class="content-wrapper">
         <div class="row">
-            <div class="col-md-4 linhas">
+            <div class="col-md-4">
                 <div class="pic">
                     <img src="{{$pokemon->pic->front_default}}">
                 </div>
-                <div class="name">
+                <div class="cards">
                     <span>
                         {{$pokemon->name}}
                     </span>
                 </div>
+                @foreach($pokemon->types as $key => $value)
+                <div class="cards" style="background-color: {{$pokemon->type_color[$key]}};">
+                    <span>
+                        {{$value->type->name}}
+                    </span>
+                </div>
+                @endforeach 
             </div>
             <div class="col-md-8">
                 <div class="row">
