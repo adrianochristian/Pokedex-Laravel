@@ -41,7 +41,7 @@ class PokedexController extends Controller
     public function getAll()
     {
         //All
-        $call = $this->getData("https://pokeapi.co/api/v2/pokemon/?limit=151");
+        $call = $this->getData("https://pokeapi.co/api/v2/pokemon/?limit=27");
         return $call->results;
     }
 
