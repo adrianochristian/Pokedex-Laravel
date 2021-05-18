@@ -2,7 +2,7 @@
 @section('content')
 <style>
 .footer-wrapper{
-    position: relative !important;
+    position: absolute !important;
 }
 </style>
 <div class="content-wrapper">
